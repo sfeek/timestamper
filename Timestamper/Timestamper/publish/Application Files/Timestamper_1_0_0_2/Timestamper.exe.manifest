@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Timestamper.exe" version="1.0.0.2" publicKeyToken="4a120d42f5edd53c" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="on-time-icon-27.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Timestamper" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Timestamper.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Timestamper.exe" size="552944">
+      <assemblyIdentity name="Timestamper" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jwisjHpzbLfBf6ATfJmv6XjXdORHigLSKDyY0EAY0Rw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="on-time-icon-27.ico" size="270398">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tAgewPafunwtoFgS8KqRlJirdSNVvNknmt6sX0uPwxQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Timestamper.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=STRUCTURETEC\shane.feek" issuerKeyHash="d0d341da0877874a9308ab95016265d80acf9cb0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>l4KZbNPXX0r69fJ98BBCneoRABdsIeKXElX1vqjTXMw=</DigestValue></Reference></SignedInfo><SignatureValue>YDidgzZsL0JI6U/nLHQSzeGfYFeMQ+BSEJN+6LfE/I2V6YMG3r4qiL0ozSEmB1nZhHs2Plt9foPLTPeJjThxBsqekC0N2CxDsx/mER0LYQOjWS0uTEtmTEPb3rQlc7K7+Y5UQki4rssMTEUXqWpyN9OmHU0/KtfdBLAlmTuV/8Q=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rR9AgFZbN/VhhswK46QkUFRzlGsWbVix+S/C9Y867Q0n9Uw3W4j1Zvdaj0a8yGVXE6KT5ybhnXKts+TOm0CxpY/LQkXiX8rvuAdmfQSmTJJ1u5f91mesgN6p7M6t5yFr3qTgLgAQdFv2yCsSteYFGQ4Plp7mvyXIz+JaPjCbI6U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="cc5cd3a8bef5551297e2216c170011ea9d4210f07df2f5fa4a5fd7d36c998297" Description="" Url=""><as:assemblyIdentity name="Timestamper.exe" version="1.0.0.2" publicKeyToken="4a120d42f5edd53c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=STRUCTURETEC\shane.feek</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fTvNdK6p6xuYPkOzSLuBeGQuHGagmmC+wMDTRLJN2L8=</DigestValue></Reference></SignedInfo><SignatureValue>HIS5Uck1UnFLA0GiCAAIQwptsmLURH4dHKhP+YSSwA1A8QQOirH1/uxuHhmMcwoxuQlgB2L4MDs7G4rxtDYn4QkoU6STXog6a4shxAoVZmWlEminfoItHn/B0/KNy/WmukTWrymYrgreWcLOR8S8JO+xcaNqf9zEW/vFpmjadrw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rR9AgFZbN/VhhswK46QkUFRzlGsWbVix+S/C9Y867Q0n9Uw3W4j1Zvdaj0a8yGVXE6KT5ybhnXKts+TOm0CxpY/LQkXiX8rvuAdmfQSmTJJ1u5f91mesgN6p7M6t5yFr3qTgLgAQdFv2yCsSteYFGQ4Plp7mvyXIz+JaPjCbI6U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQHuPOvPdFMIlFenwhLfPBnjANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4AUwBUAFIAVQBDAFQAVQBSAEUAVABFAEMAXABzAGgAYQBuAGUALgBmAGUAZQBrMB4XDTI0MDIxMDE5NDkzMFoXDTI1MDIxMDAxNDkzMFowOTE3MDUGA1UEAx4uAFMAVABSAFUAQwBUAFUAUgBFAFQARQBDAFwAcwBoAGEAbgBlAC4AZgBlAGUAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEArR9AgFZbN/VhhswK46QkUFRzlGsWbVix+S/C9Y867Q0n9Uw3W4j1Zvdaj0a8yGVXE6KT5ybhnXKts+TOm0CxpY/LQkXiX8rvuAdmfQSmTJJ1u5f91mesgN6p7M6t5yFr3qTgLgAQdFv2yCsSteYFGQ4Plp7mvyXIz+JaPjCbI6UCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCUHavKKYGUJQRAyg9k+l+lIf5465O307VCbWMTe8NdNaKnvEvKHepzUBB/SGldkA6kM1OJNvWu5RSZqyH3tL0LHxC2XqMLNgevhxfC5QxkcG120tI8L7tTs37LMXYK/1Bt1pZZcGzfe8vg71c4jHbtMv5mmJsraGDwqonN6KkcyQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
